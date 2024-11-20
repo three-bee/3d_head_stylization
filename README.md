@@ -20,7 +20,7 @@ We follow [PanoHead's approach](https://github.com/NVlabs/eg3d/?tab=readme-ov-fi
 For your convenience, we provide W+ latents of several real-life identities in ```example``` folder.
 
 ## :checkered_flag: Checkpoints
-Download all networks to your desired locations. We also provide stylized generator checkpoints for several prompts [in this link](X).
+Download all networks to your desired locations. We also provide stylized generator checkpoints for several prompts [in this link](https://drive.google.com/drive/folders/1P62hXsuOPbSGEhwFd4RtRWL7nzf44hRD?usp=sharing).
 |        **Network**        |         **Filename**        |         **Location**        |
 |:-------------------------:|:---------------------------:|:---------------------------:|
 | [PanoHead](https://drive.google.com/drive/folders/1m517-F1NCTGA159dePs5R5qj02svtX1_) | ```easy-khair-180-gpc0.8-trans10-025000.pkl```   | ```${G_ckpt_path}```   |
@@ -31,7 +31,7 @@ Download all networks to your desired locations. We also provide stylized genera
 
 
 ## :rocket: Quickstart
-Change ```${stylized_G_ckpt_path}``` with checkpoint paths given [in this link](X). ```example``` folder provides several real-life W+ encoded heads. Giving an invalid path to ```latent_list_path``` will stylize ```synth_sample_num``` of synthetic samples.
+Change ```${stylized_G_ckpt_path}``` with checkpoint paths given [in this link](https://drive.google.com/drive/folders/1P62hXsuOPbSGEhwFd4RtRWL7nzf44hRD?usp=sharing). ```example``` folder provides several real-life W+ encoded heads. Giving an invalid path to ```latent_list_path``` will stylize ```synth_sample_num``` of synthetic samples.
 ```
 python infer_LD.py \
     --save_path "work_dirs/demo" \
