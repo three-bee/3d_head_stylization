@@ -15,7 +15,7 @@
 
 
 ## :checkered_flag: Checkpoints
-Download all networks to your desired locations.
+Download all networks to your desired locations. We also provide stylized generator checkpoints for several prompts [in this link](X).
 |        **Network**        |         **Filename**        |         **Location**        |
 |:-------------------------:|:---------------------------:|:---------------------------:|
 | [PanoHead](https://drive.google.com/drive/folders/1m517-F1NCTGA159dePs5R5qj02svtX1_) | ```easy-khair-180-gpc0.8-trans10-025000.pkl```   | ```${G_ckpt_path}```   |
@@ -24,15 +24,23 @@ Download all networks to your desired locations.
 |      [ControlNet depth](https://huggingface.co/lllyasviel/sd-controlnet-depth) | ```sd-controlnet-depth/```              | ```${controlnet_depth_path}```   |
 |       [DepthAnythingV2](https://github.com/DepthAnything/Depth-Anything-V2) | ```depth_anything_v2_vitb.pth```           | ```${depth_path}```   |
 
+
 ## :rocket: Quickstart
-
-
+Change ```${stylized_G_ckpt_path}``` with checkpoint paths given [in this link](X). ```example``` folder provides several real-life W+ encoded heads. Giving an invalid path to ```latent_list_path``` will stylize ```synth_sample_num``` of synthetic samples.
+```
+python infer_LD.py \
+    --save_path "work_dirs/demo" \
+    --G_ckpt_path ${G_ckpt_path} \
+    --stylized_G_ckpt_path ${stylized_G_ckpt_path} \
+    --latent_list_path "example" \
+    --synth_sample_num 10
+```
 ## :running: Training
 Change ```prompt``` and ```save_path```. You may play with other hyperparameters in the training file.
 ```
 python train_LD.py \
     --prompt "Portrait of a werewolf" \
-    --save_path "demo" \
+    --save_path "work_dirs/demo" \
     --diff_ckpt_path ${diff_ckpt_path} \
     --depth_path ${depth_path} \
     --G_ckpt_path ${G_ckpt_path} \
