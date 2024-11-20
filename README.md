@@ -9,10 +9,15 @@
 3D head stylization transforms realistic facial features into artistic representations, enhancing user engagement across gaming and virtual reality applications. While 3D-aware generators have made significant advancements, many 3D stylization methods primarily provide near-frontal views and struggle to preserve the unique identities of original subjects, often resulting in outputs that lack diversity and individuality. This paper addresses these challenges by leveraging the PanoHead model, synthesizing images from a comprehensive 360-degree perspective. We propose a novel framework that employs negative log-likelihood distillation (LD) to enhance identity preservation and improve stylization quality. By integrating multi-view grid score and mirror gradients within the 3D GAN architecture and introducing a score rank weighing technique, our approach achieves substantial qualitative and quantitative improvements. Our findings not only advance the state of 3D head stylization but also provide valuable insights into effective distillation processes between diffusion models and GANs, focusing on the critical issue of identity preservation.
 
 ## 🛠️ Requirements and installation
-
+* Make sure you have 64-bit Python 3.8, PyTorch 11.1 (or above), and CUDA 11.3 (or above).
+* Preferably, create a new environment via [conda](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) or [venv](https://docs.python.org/3/library/venv.html) and activate the environment.
+* Clone repository: ```git clone --recursive https://github.com/three-bee/3d_head_stylization.git```
+* Install pip dependencies: ```cd ./3d_head_stylization && pip install -r requirements.txt```
 
 ## :scissors: Dataset preparation
+We follow [PanoHead's approach](https://github.com/NVlabs/eg3d/?tab=readme-ov-file#preparing-datasets) for pose extraction and face alignment.  For this, you need to follow the setup procedure of PanoHead and ensure that you **do not skip** the setup of [3DDFA_V2](https://github.com/cleardusk/3DDFA_V2). Then, run [```PanoHead/projector_withseg.py```](https://github.com/SizheAn/PanoHead/blob/17ad915941c7e2703d5aa3eb5ff12eac47c90e53/projector_withseg.py#L330) and omit the ```project_pti``` stage, to only perform W+ encoding.
 
+For your convenience, we provide W+ latents of several real-life identities in ```example``` folder.
 
 ## :checkered_flag: Checkpoints
 Download all networks to your desired locations. We also provide stylized generator checkpoints for several prompts [in this link](X).
