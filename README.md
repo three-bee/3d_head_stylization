@@ -15,7 +15,7 @@
 * Install pip dependencies: ```cd ./3d_head_stylization && pip install -r requirements.txt```
 
 ## :scissors: Dataset preparation
-We follow [PanoHead's approach](https://github.com/NVlabs/eg3d/?tab=readme-ov-file#preparing-datasets) for pose extraction and face alignment.  For this, you need to follow the setup procedure of PanoHead and ensure that you **do not skip** the setup of [3DDFA_V2](https://github.com/cleardusk/3DDFA_V2). Then, run [```PanoHead/projector_withseg.py```](https://github.com/SizheAn/PanoHead/blob/17ad915941c7e2703d5aa3eb5ff12eac47c90e53/projector_withseg.py#L330) and omit the ```project_pti``` stage, to only perform W+ encoding.
+We follow [PanoHead's approach](https://github.com/SizheAn/PanoHead/blob/main/3DDFA_V2_cropping/cropping_guide.md) for pose extraction and face alignment.  For this, you need to follow the setup procedure of PanoHead and ensure that you **do not skip** the setup of [3DDFA_V2](https://github.com/cleardusk/3DDFA_V2). Then, run [```PanoHead/projector_withseg.py```](https://github.com/SizheAn/PanoHead/blob/17ad915941c7e2703d5aa3eb5ff12eac47c90e53/projector_withseg.py#L330) and omit the ```project_pti``` stage, to only perform W+ encoding.
 
 For your convenience, we provide W+ latents of several real-life identities in ```example``` folder.
 
