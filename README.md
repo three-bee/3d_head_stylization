@@ -2,7 +2,7 @@
 
 [Bahri Batuhan Bilecen](https://three-bee.github.io), [Ahmet Berke Gokmen](https://berkegokmen1.medium.com/), Furkan Guzelant, and [Aysegul Dundar](http://www.cs.bilkent.edu.tr/~adundar/)
 
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![Project Website](https://img.shields.io/badge/Project_website-red.svg)](https://three-bee.github.io/head_stylization/) [![arXiv](https://img.shields.io/badge/arXiv-2404.03632-b31b1b.svg)](X)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![Project Website](https://img.shields.io/badge/Project_website-red.svg)](https://three-bee.github.io/head_stylization/)
 
 ![Teaser](./assets/teaser.png)
 
