@@ -2,7 +2,10 @@
 
 [Bahri Batuhan Bilecen](https://three-bee.github.io), [Ahmet Berke Gokmen](https://berkegokmen1.medium.com/), Furkan Guzelant, and [Aysegul Dundar](http://www.cs.bilkent.edu.tr/~adundar/)
 
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![Project Website](https://img.shields.io/badge/Project_website-red.svg)](https://three-bee.github.io/head_stylization/)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![Project Website](https://img.shields.io/badge/Project_website-red.svg)](https://three-bee.github.io/head_stylization/) [![arXiv](https://img.shields.io/badge/arXiv-2411.13536-b31b1b.svg)](https://arxiv.org/abs/2411.13536)
+
+
+
 
 ![Teaser](./assets/teaser.png)
 
@@ -53,8 +56,13 @@ python train_LD.py \
     --controlnet_depth_path ${controlnet_depth_path}
 ```
 
-
 ## :incoming_envelope: Citation
-
-
+```
+@misc{bilecen2024identitypreserving3dhead,
+      title={Identity Preserving 3D Head Stylization with Multiview Score Distillation}, 
+      author={Bahri Batuhan Bilecen and Ahmet Berke Gokmen and Furkan Guzelant and Aysegul Dundar},
+      year={2024},
+      url={https://arxiv.org/abs/2411.13536},
+}
+```
 Copyright 2024 [Bilkent DLR](https://dlr.bilkent.edu.tr/). Licensed under the Apache License, Version 2.0 (the "License").
