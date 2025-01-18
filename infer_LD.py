@@ -69,7 +69,7 @@ class Inference():
         return c
 
     @torch.no_grad()
-    def infer(self, latent_list=[], synth_sample_num=10): 
+    def infer(self, latent_list=[], synth_sample_num=10, bs=1): 
         ws_list = []
         if latent_list == []:
             for _ in range(synth_sample_num):
