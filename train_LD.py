@@ -252,7 +252,7 @@ class Coach():
         
         images = curr_pipe.decode_latents(latents.to(torch.float16))
         images = curr_pipe.numpy_to_pil(images)
-        return image_mask
+        return images
 
     def low_rank_approximation(self, grad, k=4):
         """
