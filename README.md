@@ -1,4 +1,4 @@
-# Identity Preserving 3D Head Stylization with Multiview Score Distillation
+# Identity Preserving 3D Head Stylization with Multiview Score Distillation [ICCV 2025]
 
 [Bahri Batuhan Bilecen](https://three-bee.github.io), [Ahmet Berke Gokmen](https://berkegokmen1.medium.com/), Furkan Guzelant, and [Aysegul Dundar](http://www.cs.bilkent.edu.tr/~adundar/)
 
